@@ -12,18 +12,22 @@ def interface():
             #HDL_driver()
     return  
 
-#def accept_input(test_name):
-    #entry = input("Enter the {}test result: ".format(test_name))
-    #return int(entry)
 
-#def check_HDL(HDL_value):
-    #if HDL_value >= 60:
-        #answer = "Normal"
-   # elif 60 > HDL_value >= 40:
-        #answer = "Borderline Low"
-    #else:
-        #answer = "Low"
-    #return answer
+
+def accept_input(test_name):
+    entry = input("Enter the {}test result: ".format(test_name))
+    return int(entry)
+
+def check_LDL(LDL_value):
+    if LDL_value < 130:
+        answer = "Normal"
+    elif 159 >= LDL_value >= 130:
+        answer = "Borderline High"
+    elif 189 >= LDL_value >= 160:
+        answer = "Borderline Low"
+    else:
+        answer = "Very High"
+    return answer
     
 #def print_result(test_name, test_value, test_class):
     #out_string = "The test value of {} for {} is {}".format(test_value, test_name, test_class)
