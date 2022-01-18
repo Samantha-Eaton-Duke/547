@@ -16,7 +16,7 @@ def accept_input(test_name):
     entry = input("Enter the {}test result: ".format(test_name))
     return int(entry)
 
-def check_HDL(cholesterol_value):
+def check_cholesterol(cholesterol_value):
     if cholesterol_value < 200:
         answer = "Normal"
     elif 239 >= cholesterol_value >= 200:

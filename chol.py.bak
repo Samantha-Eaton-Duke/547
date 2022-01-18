@@ -30,9 +30,9 @@ def print_result(test_name, test_value, test_class):
     print(out_string)
     return
 
-def HDL_driver():
-    HDL_value = accept_input("HDL")
-    classificaton = check_HDL(HDL_value)
-    print_result("HDL", HDL_value, classificaton)
+def cholesterol_driver():
+    cholesterol_value = accept_input("Cholesterol")
+    classificaton = check_cholesterol(cholesterol_value)
+    print_result("Cholesterol", cholesterol_value, classificaton)
     return
 interface()
