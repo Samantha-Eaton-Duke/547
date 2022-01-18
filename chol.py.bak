@@ -16,13 +16,13 @@ def accept_input(test_name):
     entry = input("Enter the {}test result: ".format(test_name))
     return int(entry)
 
-def check_HDL(HDL_value):
-    if HDL_value >= 60:
+def check_HDL(cholesterol_value):
+    if cholesterol_value < 200:
         answer = "Normal"
-    elif 60 > HDL_value >= 40:
-        answer = "Borderline Low"
+    elif 239 >= cholesterol_value >= 200:
+        answer = "Borderline High"
     else:
-        answer = "Low"
+        answer = "High"
     return answer
     
 def print_result(test_name, test_value, test_class):
