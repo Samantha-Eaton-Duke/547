@@ -29,14 +29,15 @@ def check_LDL(LDL_value):
         answer = "Very High"
     return answer
     
-#def print_result(test_name, test_value, test_class):
-    #out_string = "The test value of {} for {} is {}".format(test_value, test_name, test_class)
-    #print(out_string)
-    #return
+def print_result(test_name, test_value, test_class):
+    out_string = "The test value of {} for {} is {}".format(test_value, test_name, test_class)
+    print(out_string)
+    return
 
 def LDL_driver():
     LDL_value = accept_input("LDL")
     classificaton_LDL = check_LDL(LDL_value)
     print_result("LDL", LDL_value, classificaton_LDL)
     return
+
 interface()
