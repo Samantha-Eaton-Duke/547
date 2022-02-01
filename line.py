@@ -30,7 +30,7 @@ def print_results(y):
     out_string = "The line will be intercepted at y = {}".format(y)
     print(out_string)
 
-def line_point(x1, y1, x2, y2, x):
+def line_point(x1,y1,x2,y2, x):
     #x1, y1, x2, y2, x = user_input()
     m = calculate_slope(x1,y1,x2,y2, x)
     b = x_intercept(y1, m, x1)
