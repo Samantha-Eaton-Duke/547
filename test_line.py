@@ -13,7 +13,7 @@ import pytest
 #    expected = 7
 #   assert result == expected
     
-def test_line():
+def test_line(in_x1, in_y1, in_x2, in_y2, in_x, expected):
     from line import calculate_slope
     result = calculate_slope(in_x1, in_y1, in_x2, in_y2, in_x)
     #expected = -3
