@@ -37,4 +37,3 @@ def line_point(x1,y1,x2,y2, x):
     y = y_intercept(m, x, b)
     print_results(y)
 
-line_point()
