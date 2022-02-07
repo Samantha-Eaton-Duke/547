@@ -1,5 +1,5 @@
-print("This is the blood_calculator module and python calls it"
-      " {}".format(__name__))
+print("This is the blood_calculator module and python calls it {}"
+      .format(__name__))
 
 
 def interface():
@@ -20,7 +20,7 @@ def interface():
             LDL_driver()
         elif choice == "3":
             total_driver()
-            return
+        return
 
 
 def accept_input(test_name):
@@ -41,7 +41,7 @@ def check_HDL(HDL_value):
         answer = "Borderline Low"
     else:
         answer = "Low"
-        return answer
+    return answer
 
 
 def HDL_driver():
@@ -59,7 +59,7 @@ def check_LDL(LDL_value):
         answer = "High"
     else:
         answer = "Very High"
-        return answer
+    return answer
 
 
 def LDL_driver():
@@ -75,7 +75,7 @@ def check_total(total_value):
         answer = "Borderline High"
     else:
         answer = "High"
-        return answer
+    return answer
 
 
 def total_driver():
