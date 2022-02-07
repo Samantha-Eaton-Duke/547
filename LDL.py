@@ -44,4 +44,4 @@ def LDL_driver():
     return
 
 
-interface() -s
+interface()
