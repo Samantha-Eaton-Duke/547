@@ -35,5 +35,5 @@ def line_point(x1,y1,x2,y2, x):
     m = calculate_slope(x1,y1,x2,y2, x)
     b = x_intercept(y1, m, x1)
     y = y_intercept(m, x, b)
+    return y
     print_results(y)
-
