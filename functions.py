@@ -1,6 +1,7 @@
-def add (a,b):
+def add(a, b):
     c = a + b
-    return
-    
-x = add(1,2)
+    return c
+
+
+x = add(1, 2)
 print(x)

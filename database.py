@@ -1,6 +1,6 @@
+from blood_calculator import check_HDL, check_LDL
 print("This is the database module and python calls it {}".format(__name__))
 
-from blood_calculator import check_HDL, check_LDL
 
 HDL_value = 55
 
