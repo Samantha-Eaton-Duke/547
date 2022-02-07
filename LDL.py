@@ -10,13 +10,13 @@ def interface():
             keep_running = False
         elif choice == "1":
             LDL_driver()
-    return  
-
+    return
 
 
 def accept_input(test_name):
     entry = input("Enter the {}test result: ".format(test_name))
     return int(entry)
+
 
 def check_LDL(LDL_value):
     if LDL_value < 130:
@@ -28,11 +28,14 @@ def check_LDL(LDL_value):
     else:
         answer = "Very High"
     return answer
-    
+
+
 def print_result(test_name, test_value, test_class):
-    out_string = "The test value of {} for {} is {}".format(test_value, test_name, test_class)
+    out_string = "The test value of {} for {} is {}".format(
+        test_value, test_name, test_class)
     print(out_string)
     return
+
 
 def LDL_driver():
     LDL_value = accept_input("LDL")
@@ -40,4 +43,5 @@ def LDL_driver():
     print_result("LDL", LDL_value, classificaton_LDL)
     return
 
-interface()
+
+interface() -s
